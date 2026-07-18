@@ -11,7 +11,7 @@ url = StringVar()
 ur_address = StringVar()
 
 
-# ── Functions must be defined BEFORE any widget uses them as `command=` ──
+
 def shorten_url():
     url_address = url.get()
     if url_address:
@@ -30,7 +30,7 @@ def copy_to_clipboard():
         result_label.config(text=f"Copied: {ur_address.get()}")
 
 
-# ── Widgets (built after the functions above already exist) ──
+
 url_label = Label(root, text="Enter URL:", font=("Arial", 12), bg="#7AD2A7")
 url_label.pack(pady=10)
 
