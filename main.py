@@ -5,7 +5,7 @@ from tkinter import *
 root = Tk()
 root.geometry("400x300")
 root.title("URL Shortener")
-root.config(bg="#7AD2A7")
+root.config(bg="#E7FFF3")
 
 url = StringVar()
 ur_address = StringVar()
@@ -31,7 +31,7 @@ def copy_to_clipboard():
 
 
 
-url_label = Label(root, text="Enter URL:", font=("Arial", 12), bg="#7AD2A7")
+url_label = Label(root, text="Enter URL:", font=("Arial", 12), bg="#E7FFF3")
 url_label.pack(pady=10)
 
 url_entry = Entry(root, textvariable=url, font=("Arial", 12), width=30)
@@ -40,7 +40,7 @@ url_entry.pack(pady=10)
 shorten_button = Button(root, text="Shorten URL", font=("Arial", 12), bg="#5DADE2", command=shorten_url)
 shorten_button.pack(pady=10)
 
-result_label = Label(root, text="", font=("Arial", 12), bg="#7AD2A7")
+result_label = Label(root, text="", font=("Arial", 12), bg="#E7FFF3")
 result_label.pack(pady=10)
 
 result_entry = Entry(root, textvariable=ur_address, font=("Arial", 12), width=30)
